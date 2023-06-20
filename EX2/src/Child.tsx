@@ -19,7 +19,9 @@ const Child=(props:childProps)=> {
         value={text}
       />
       <Button title='Submit' onPress={()=>props.submit(text)}/>
-      <Button title = 'Reset' onPress={()=>props.reset()}/>
+      <Button title = 'Reset' onPress={()=>{
+        props.reset()
+        onChangeText('')}}/>
 
     </View>
   );
