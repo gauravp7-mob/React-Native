@@ -71,6 +71,8 @@ export default class App extends Component{
       this.isApplied=coup?true:false
       if(prev.total>(coup?coup.discount:0))
       prev.total -= (coup?coup.discount:0)
+      else
+      this.isApplied=false
       return prev;
     })
   }
