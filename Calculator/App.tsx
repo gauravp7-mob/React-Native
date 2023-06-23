@@ -8,8 +8,6 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
 } from 'react-native';
 import CalculatorComponent from './src/CalculatorComponent';
@@ -20,7 +18,7 @@ import CalculatorComponent from './src/CalculatorComponent';
 
 function App() {
   
-  const arrayOfValues:string[] = ['1','2','3','4','5','6','7','8','9','0','+','-','*','/','=','<'];
+  const arrayOfValues:string[] = ['1','2','3','4','5','6','7','8','9','0','+','-','*','/','=','<','Reset'];
   return (
     <SafeAreaView style={{marginVertical:40}}>
       <CalculatorComponent arrayOfValue={arrayOfValues}/>
