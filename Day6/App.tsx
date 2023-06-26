@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Login from './src/Login';
 import { SafeAreaView, View } from 'react-native';
-import { styles } from './src/Style';
 import Register from './src/Register';
 
 function App() {

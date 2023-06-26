@@ -28,7 +28,7 @@ export default function Login(props:Iprops) {
             placeholder="Mobile Number"></TextInput>
         </View>
       </View>
-      <TouchableOpacity style={styles.buttonLogin} onPress={()=>props.onPressHandle(true)}>
+      <TouchableOpacity style={styles.buttonLogin} onPress={()=>props.onPressHandle()}>
         <Text style={[styles.text, {fontSize: 30}]}>Next</Text>
       </TouchableOpacity>
     </View>

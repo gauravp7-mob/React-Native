@@ -7,9 +7,6 @@ export const styles = StyleSheet.create({
     width: 220,
    
   },
-  modal:{
-    borderWidth:2,borderRadius:100
-  },
   greyView: {
     backgroundColor: '#EEEEEE',
     width: '80%',
@@ -41,7 +38,7 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     position: 'absolute',
     top:620,
-    width: 100,
+    width: 140,
     
   },
   buttonLogin:{
@@ -51,6 +48,14 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top:560,
     width: 100,
+  },
+  buttonBack:{
+    backgroundColor: 'grey',
+    borderWidth: 2,
+    borderRadius: 20,
+    position: 'absolute',
+    top:750,
+    width: 140,
   },
   userImage:{
     height:70,

@@ -49,9 +49,13 @@ function Register(props:Iprops) {
             placeholder="Mobile Number"></TextInput>
         </View>
         </View>
-        <TouchableOpacity style={styles.button} onPress={()=>props.onBackHandle()}>
+        <TouchableOpacity style={styles.button} >
+        <Text style={[styles.text, {fontSize: 30}]}>Register</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.buttonBack} onPress={()=>props.onBackHandle()}>
         <Text style={[styles.text, {fontSize: 30}]}>Back</Text>
       </TouchableOpacity>
+
 
     </View>
     </Modal>
