@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Animated,
   Modal,
@@ -27,13 +27,21 @@ function Animation(props: Iprops) {
     color1='red'
     color2='black'
   }
+  // useEffect(()=>{
+  //   value.setValue(0);
+  // },[isEnabled])
   const changeColor = () => {
-    setIsEnabled(true);
+
+    value.setValue(0)
     Animated.timing(value, {
-      toValue: 100,
+      toValue: 1000,
       duration: 1000,
       useNativeDriver: false,
     }).start();
+    if(isEnabled===false)
+    setIsEnabled(true);
+    else
+    setIsEnabled(false);
   };
   return (
     <Modal
@@ -46,7 +54,7 @@ function Animation(props: Iprops) {
             width: '100%',
             height: '120%',
             backgroundColor: value.interpolate({
-              inputRange: [0, 100],
+              inputRange: [0, 1000],
               outputRange: [color1, color2],
             }),
           }}></Animated.View>
