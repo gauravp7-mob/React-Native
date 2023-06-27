@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  mainView: {flex:1, alignItems: 'center', justifyContent: 'center',borderWidth:2,borderRadius:50},
+  mainView: {flex:1, alignItems: 'center', justifyContent: 'center'},
   image: {
     height: 250,
     width: 220,
@@ -54,7 +54,7 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 20,
     position: 'absolute',
-    top:750,
+    top:730,
     width: 140,
   },
   userImage:{

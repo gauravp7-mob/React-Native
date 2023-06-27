@@ -4,6 +4,7 @@ import { styles } from './Style'
 
 interface Iprops{
     onPressHandle:Function
+    onPressAnimationHandle:Function,
 }
 export default function Login(props:Iprops) {
   return (
@@ -30,6 +31,9 @@ export default function Login(props:Iprops) {
       </View>
       <TouchableOpacity style={styles.buttonLogin} onPress={()=>props.onPressHandle()}>
         <Text style={[styles.text, {fontSize: 30}]}>Next</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.buttonBack} >
+        <Text style={[styles.text, {fontSize: 30}]} onPress={()=>props.onPressAnimationHandle()}>Animation</Text>
       </TouchableOpacity>
     </View>
   )
